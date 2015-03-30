@@ -1417,7 +1417,7 @@ void PORT_init(void)
 	PORTD_OUTSET = PIN3_bm;
      902:	80 93 65 06 	sts	0x0665, r24
  
-    //Measuring pressure button interrupt (INT1)*
+    //Measuring pressure button interrupt (INT1)**
  	PORTE_OUTSET=PIN2_bm;  ////ama kilid be vcc vasle! bepors bebin 0 esh koni mipoke ya na
      906:	84 e0       	ldi	r24, 0x04	; 4
      908:	80 93 85 06 	sts	0x0685, r24
