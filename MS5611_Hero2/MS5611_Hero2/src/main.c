@@ -73,8 +73,8 @@ ISR(TWIC_TWIM_vect)
  {
  	//PORTE_OUTCLR = PIN3_bm;  //LED
 	//while ((PORTE.IN&0x04)==0)  chera kar nakard??
-	
-	PORTE_OUTCLR = PIN3_bm;  //LED
+	//
+	PORTE_OUTCLR= PIN3_bm;  //LED
 	
 	 	
  }

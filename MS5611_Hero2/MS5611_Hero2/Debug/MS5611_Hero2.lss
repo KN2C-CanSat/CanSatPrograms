@@ -2501,8 +2501,8 @@ ISR(TWIC_TWIM_vect)
      e84:	8f 93       	push	r24
  	//PORTE_OUTCLR = PIN3_bm;  //LED
 	//while ((PORTE.IN&0x04)==0)  chera kar nakard??
-	
-	PORTE_OUTCLR = PIN3_bm;  //LED
+	//
+	PORTE_OUTCLR= PIN3_bm;  //LED
      e86:	88 e0       	ldi	r24, 0x08	; 8
      e88:	80 93 86 06 	sts	0x0686, r24
 	
