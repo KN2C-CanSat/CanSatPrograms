@@ -761,7 +761,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x7c src/ASF/common/services/ioport/xmega/ioport_compat.o
  .debug_macro   0x00000000      0x109 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .debug_line    0x00000000      0x412 src/ASF/common/services/ioport/xmega/ioport_compat.o
- .debug_str     0x00000000    0x23864 src/ASF/common/services/ioport/xmega/ioport_compat.o
+ .debug_str     0x00000000    0x2385e src/ASF/common/services/ioport/xmega/ioport_compat.o
  .comment       0x00000000       0x31 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .group         0x00000000        0x8 src/ASF/common/services/clock/xmega/sysclk.o
  .group         0x00000000        0x8 src/ASF/common/services/clock/xmega/sysclk.o
@@ -858,7 +858,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x154 src/ASF/common/services/clock/xmega/sysclk.o
  .debug_macro   0x00000000       0x26 src/ASF/common/services/clock/xmega/sysclk.o
  .debug_line    0x00000000      0x5ce src/ASF/common/services/clock/xmega/sysclk.o
- .debug_str     0x00000000    0x24809 src/ASF/common/services/clock/xmega/sysclk.o
+ .debug_str     0x00000000    0x24803 src/ASF/common/services/clock/xmega/sysclk.o
  .comment       0x00000000       0x31 src/ASF/common/services/clock/xmega/sysclk.o
  .debug_frame   0x00000000       0x64 src/ASF/common/services/clock/xmega/sysclk.o
  .group         0x00000000        0x8 src/ASF/xmega/drivers/nvm/nvm.o
@@ -980,7 +980,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x26 src/ASF/xmega/drivers/nvm/nvm.o
  .debug_macro   0x00000000       0x16 src/ASF/xmega/drivers/nvm/nvm.o
  .debug_line    0x00000000      0xb25 src/ASF/xmega/drivers/nvm/nvm.o
- .debug_str     0x00000000    0x23e60 src/ASF/xmega/drivers/nvm/nvm.o
+ .debug_str     0x00000000    0x23e5a src/ASF/xmega/drivers/nvm/nvm.o
  .comment       0x00000000       0x31 src/ASF/xmega/drivers/nvm/nvm.o
  .debug_frame   0x00000000      0x340 src/ASF/xmega/drivers/nvm/nvm.o
  .text          0x00000000        0x0 src/ASF/xmega/drivers/nvm/nvm_asm.o
@@ -990,7 +990,7 @@ Discarded input sections
                 0x00000000       0x14 src/ASF/xmega/drivers/nvm/nvm_asm.o
  .BOOT          0x00000000       0x44 src/ASF/xmega/drivers/nvm/nvm_asm.o
  .debug_line    0x00000000      0x11f src/ASF/xmega/drivers/nvm/nvm_asm.o
- .debug_info    0x00000000       0x94 src/ASF/xmega/drivers/nvm/nvm_asm.o
+ .debug_info    0x00000000       0x8e src/ASF/xmega/drivers/nvm/nvm_asm.o
  .debug_abbrev  0x00000000       0x12 src/ASF/xmega/drivers/nvm/nvm_asm.o
  .debug_aranges
                 0x00000000       0x28 src/ASF/xmega/drivers/nvm/nvm_asm.o
@@ -1001,7 +1001,7 @@ Discarded input sections
  .text.ccp_write_io
                 0x00000000        0xc src/ASF/xmega/drivers/cpu/ccp.o
  .debug_line    0x00000000       0x6e src/ASF/xmega/drivers/cpu/ccp.o
- .debug_info    0x00000000       0x94 src/ASF/xmega/drivers/cpu/ccp.o
+ .debug_info    0x00000000       0x8e src/ASF/xmega/drivers/cpu/ccp.o
  .debug_abbrev  0x00000000       0x14 src/ASF/xmega/drivers/cpu/ccp.o
  .debug_aranges
                 0x00000000       0x20 src/ASF/xmega/drivers/cpu/ccp.o
@@ -1097,7 +1097,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x154 src/ASF/common/boards/user_board/init.o
  .debug_macro   0x00000000       0x3a src/ASF/common/boards/user_board/init.o
  .debug_line    0x00000000      0x5ad src/ASF/common/boards/user_board/init.o
- .debug_str     0x00000000    0x247fe src/ASF/common/boards/user_board/init.o
+ .debug_str     0x00000000    0x247f8 src/ASF/common/boards/user_board/init.o
  .comment       0x00000000       0x31 src/ASF/common/boards/user_board/init.o
  .debug_frame   0x00000000       0x24 src/ASF/common/boards/user_board/init.o
  .group         0x00000000        0x8 src/main.o
@@ -2042,24 +2042,24 @@ END GROUP
  .debug_frame   0x0000035c       0xf0 src/twi_master_driver.o
  .debug_frame   0x0000044c       0xac src/main.o
 
-.debug_str      0x00000000    0x276bc
+.debug_str      0x00000000    0x276b6
  *(.debug_str)
- .debug_str     0x00000000    0x24f4c src/ASF/xmega/drivers/usart/usart.o
-                              0x257c4 (size before relaxing)
- .debug_str     0x00024f4c     0x20f1 src/calculation.o
-                              0x26889 (size before relaxing)
- .debug_str     0x0002703d      0x159 src/initialize.o
-                              0x2637a (size before relaxing)
- .debug_str     0x00027196      0x10a src/MS5611.o
-                              0x26808 (size before relaxing)
- .debug_str     0x000272a0       0xb7 src/setting.o
-                              0x2683d (size before relaxing)
- .debug_str     0x00027357      0x328 src/twi_master_driver.o
-                              0x19640 (size before relaxing)
- .debug_str     0x0002767f       0x12 src/variable.o
-                              0x267a5 (size before relaxing)
- .debug_str     0x00027691       0x2b src/main.o
-                              0x267d7 (size before relaxing)
+ .debug_str     0x00000000    0x24f46 src/ASF/xmega/drivers/usart/usart.o
+                              0x257be (size before relaxing)
+ .debug_str     0x00024f46     0x20f1 src/calculation.o
+                              0x26883 (size before relaxing)
+ .debug_str     0x00027037      0x159 src/initialize.o
+                              0x26374 (size before relaxing)
+ .debug_str     0x00027190      0x10a src/MS5611.o
+                              0x26802 (size before relaxing)
+ .debug_str     0x0002729a       0xb7 src/setting.o
+                              0x26837 (size before relaxing)
+ .debug_str     0x00027351      0x328 src/twi_master_driver.o
+                              0x1963a (size before relaxing)
+ .debug_str     0x00027679       0x12 src/variable.o
+                              0x2679f (size before relaxing)
+ .debug_str     0x0002768b       0x2b src/main.o
+                              0x267d1 (size before relaxing)
 
 .debug_loc      0x00000000     0x1e3e
  *(.debug_loc)

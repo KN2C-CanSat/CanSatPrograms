@@ -31,9 +31,9 @@ void En_RC32M(void)
 
 void PORT_init(void)
 {
-	
-	PORTE_DIRSET = PIN3_bm;  //LED
-	PORTE_OUTCLR = PIN3_bm;  //LED
+	//LED
+	PORTE_DIRSET = PIN3_bm;  
+	PORTE_OUTCLR = PIN3_bm;  
 	
 	//tx
 	PORTD_DIRSET = PIN3_bm; 
