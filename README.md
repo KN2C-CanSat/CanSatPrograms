@@ -2,7 +2,7 @@
 Atmosphere Sampling Mission
 
 
-components:
+Components:
 
 GPS
 
