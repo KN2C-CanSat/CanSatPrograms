@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "girande_64", "girande_64\girande_64.cproj", "{25BE0D6B-B21E-4EAA-ADD9-103E87FCC76E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25BE0D6B-B21E-4EAA-ADD9-103E87FCC76E}.Debug|AVR.ActiveCfg = Debug|AVR
+		{25BE0D6B-B21E-4EAA-ADD9-103E87FCC76E}.Debug|AVR.Build.0 = Debug|AVR
+		{25BE0D6B-B21E-4EAA-ADD9-103E87FCC76E}.Release|AVR.ActiveCfg = Release|AVR
+		{25BE0D6B-B21E-4EAA-ADD9-103E87FCC76E}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

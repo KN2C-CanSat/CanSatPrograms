@@ -35,11 +35,11 @@ void PORT_init(void)
 	PORTE_DIRSET = PIN3_bm;  
 	PORTE_OUTCLR = PIN3_bm;  
 	
-	//tx
+	//TX
 	PORTD_DIRSET = PIN3_bm; 
 	PORTD_OUTSET = PIN3_bm;
  
-     //measuring pressure button interrupt (INT1)
+    //Measuring pressure button interrupt (INT1)/
  	PORTE_OUTSET=PIN2_bm;  ////ama kilid be vcc vasle! bepors bebin 0 esh koni mipoke ya na
  	PORTE_DIRCLR=PIN2_bm;
  	PORTE_PIN2CTRL |= PORT_ISC_RISING_gc;

@@ -21,13 +21,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   8 .debug_frame  000004f8  00000000  00000000  0000b760  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    000276b6  00000000  00000000  0000bc58  2**0
+  9 .debug_str    00027701  00000000  00000000  0000bc58  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00001e3e  00000000  00000000  0003330e  2**0
+ 10 .debug_loc    00001e3e  00000000  00000000  00033359  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000168  00000000  00000000  0003514c  2**0
+ 11 .debug_ranges 00000168  00000000  00000000  00035197  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_macro  0000a275  00000000  00000000  000352b4  2**0
+ 12 .debug_macro  0000a275  00000000  00000000  000352ff  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -1411,13 +1411,13 @@ void PORT_init(void)
 	PORTE_OUTCLR = PIN3_bm;  
      8fa:	80 93 86 06 	sts	0x0686, r24
 	
-	//tx
+	//TX
 	PORTD_DIRSET = PIN3_bm; 
      8fe:	80 93 61 06 	sts	0x0661, r24
 	PORTD_OUTSET = PIN3_bm;
      902:	80 93 65 06 	sts	0x0665, r24
  
-     //measuring pressure button interrupt (INT1)
+    //Measuring pressure button interrupt (INT1)/
  	PORTE_OUTSET=PIN2_bm;  ////ama kilid be vcc vasle! bepors bebin 0 esh koni mipoke ya na
      906:	84 e0       	ldi	r24, 0x04	; 4
      908:	80 93 85 06 	sts	0x0685, r24
@@ -2501,8 +2501,8 @@ ISR(TWIC_TWIM_vect)
      e84:	8f 93       	push	r24
  	//PORTE_OUTCLR = PIN3_bm;  //LED
 	//while ((PORTE.IN&0x04)==0)  chera kar nakard??
-	//tetstttfaud
-	PORTE_OUTCLR= PIN3_bm;  //LED
+	
+	PORTE_OUTCLR = PIN3_bm;  //LED
      e86:	88 e0       	ldi	r24, 0x08	; 8
      e88:	80 93 86 06 	sts	0x0686, r24
 	
