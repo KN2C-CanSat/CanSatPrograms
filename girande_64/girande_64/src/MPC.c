@@ -59,7 +59,7 @@ void Mpc_decode(_MPC* Mpc,uint8_t data)
 							
 							if(Mpc->sum == 0)
 							{
-								for (uint8_t k=0; k<(Mpc->j);k++)  //-2 baraye neshun nadadne bytehaye feshar
+								for (uint8_t k=0; k<(Mpc->j);k++)
 								printf2pc("%d\r",Mpc->data[k]); //vaghti az dorostie dadeha motmaen shodi ba checksum
 								printf2pc("%ld\r",finalpres.lngint); //chape feshar
 								Mpc->sum=0;
@@ -100,7 +100,7 @@ void Mpc_decode(_MPC* Mpc,uint8_t data)
 							
 							else
 							{
-								Mpc->conv.byte[0] = data;
+								Mpc->conv.byte[0] = data;   //data haye fesharo nariz unjayi ke badan khunde mishe. chon joda mikonim kolan
 								
 							}
 							
