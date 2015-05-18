@@ -9,7 +9,7 @@
 #include "variable.h"
 #include "setting.h"
 #include "NRF_transmission.h"
-
+#include "MPC.h"
 
 
 int main (void)
@@ -18,16 +18,10 @@ int main (void)
 	NRF_init();
 
 	
+	
 	while (1)
 	{
 
-   	//	if (flag==1)
-   	//	{
- //        			for (int k=0;k<_Buffer_Size;k++) //nemidunam cheshe ke age ferestande andazeye buffersize data befreste ertebat nadaran! ama age ye dune kamtar bashe daran!! pas man yedune ro azafe mikonam ke null mishe va namayesh nemidam. ( _Buffer_Size-1 albate baresh dashtam )
- //        				usart_putchar(&USARTC0,buf_receive[k]);
-  			
- //  			conv.byte[0]=buf_receive[0];
- // 			printf2pc("1:\r%d\r",conv.real);
  
  			if (copy_flag==2)
  			{
@@ -43,20 +37,17 @@ int main (void)
  			{
  				
  				//do decode
- 				NRF_decode();
- 				
+ 				//NRF_decode();
+ 				for (uint8_t i=0;i<_Buffer_Size;i++)
+						Mpc_decode(&MPC,buf_receive[i]);
+				 
  				decode_flag=0;
  				copy_flag=1;
- 				
- // 				for (int j=0;j<Len;j++)
- // 				printf2pc("data: %d\r",Buf_Print[j]);	
+
  			}
-     				
-   		//	flag =0;
- 	
-   	//	}
+
    		_delay_us(3);
-			//printf2pc("257: %d\r",3);	  
+
  	}
 }
 

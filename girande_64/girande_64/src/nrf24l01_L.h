@@ -6,6 +6,7 @@
 #ifndef NRF24L01_L_H_
 #define NRF24L01_L_H_
 #include "nfr24l01.h"
+#include "variable.h"
 #define	_CH_L 1	//1//100		// Channel 0..125
 /************************************************************************/
 /* Board Initialize                                                     */

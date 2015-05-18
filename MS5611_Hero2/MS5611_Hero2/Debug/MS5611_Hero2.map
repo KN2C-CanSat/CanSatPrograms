@@ -761,7 +761,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x7c src/ASF/common/services/ioport/xmega/ioport_compat.o
  .debug_macro   0x00000000      0x109 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .debug_line    0x00000000      0x412 src/ASF/common/services/ioport/xmega/ioport_compat.o
- .debug_str     0x00000000    0x23864 src/ASF/common/services/ioport/xmega/ioport_compat.o
+ .debug_str     0x00000000    0x23865 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .comment       0x00000000       0x31 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .group         0x00000000        0x8 src/ASF/common/services/clock/xmega/sysclk.o
  .group         0x00000000        0x8 src/ASF/common/services/clock/xmega/sysclk.o
@@ -858,7 +858,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x154 src/ASF/common/services/clock/xmega/sysclk.o
  .debug_macro   0x00000000       0x26 src/ASF/common/services/clock/xmega/sysclk.o
  .debug_line    0x00000000      0x5ce src/ASF/common/services/clock/xmega/sysclk.o
- .debug_str     0x00000000    0x24809 src/ASF/common/services/clock/xmega/sysclk.o
+ .debug_str     0x00000000    0x2480a src/ASF/common/services/clock/xmega/sysclk.o
  .comment       0x00000000       0x31 src/ASF/common/services/clock/xmega/sysclk.o
  .debug_frame   0x00000000       0x64 src/ASF/common/services/clock/xmega/sysclk.o
  .group         0x00000000        0x8 src/ASF/xmega/drivers/nvm/nvm.o
@@ -980,7 +980,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x26 src/ASF/xmega/drivers/nvm/nvm.o
  .debug_macro   0x00000000       0x16 src/ASF/xmega/drivers/nvm/nvm.o
  .debug_line    0x00000000      0xb25 src/ASF/xmega/drivers/nvm/nvm.o
- .debug_str     0x00000000    0x23e60 src/ASF/xmega/drivers/nvm/nvm.o
+ .debug_str     0x00000000    0x23e61 src/ASF/xmega/drivers/nvm/nvm.o
  .comment       0x00000000       0x31 src/ASF/xmega/drivers/nvm/nvm.o
  .debug_frame   0x00000000      0x340 src/ASF/xmega/drivers/nvm/nvm.o
  .text          0x00000000        0x0 src/ASF/xmega/drivers/nvm/nvm_asm.o
@@ -990,7 +990,7 @@ Discarded input sections
                 0x00000000       0x14 src/ASF/xmega/drivers/nvm/nvm_asm.o
  .BOOT          0x00000000       0x44 src/ASF/xmega/drivers/nvm/nvm_asm.o
  .debug_line    0x00000000      0x11f src/ASF/xmega/drivers/nvm/nvm_asm.o
- .debug_info    0x00000000       0x94 src/ASF/xmega/drivers/nvm/nvm_asm.o
+ .debug_info    0x00000000       0x95 src/ASF/xmega/drivers/nvm/nvm_asm.o
  .debug_abbrev  0x00000000       0x12 src/ASF/xmega/drivers/nvm/nvm_asm.o
  .debug_aranges
                 0x00000000       0x28 src/ASF/xmega/drivers/nvm/nvm_asm.o
@@ -1001,7 +1001,7 @@ Discarded input sections
  .text.ccp_write_io
                 0x00000000        0xc src/ASF/xmega/drivers/cpu/ccp.o
  .debug_line    0x00000000       0x6e src/ASF/xmega/drivers/cpu/ccp.o
- .debug_info    0x00000000       0x94 src/ASF/xmega/drivers/cpu/ccp.o
+ .debug_info    0x00000000       0x95 src/ASF/xmega/drivers/cpu/ccp.o
  .debug_abbrev  0x00000000       0x14 src/ASF/xmega/drivers/cpu/ccp.o
  .debug_aranges
                 0x00000000       0x20 src/ASF/xmega/drivers/cpu/ccp.o
@@ -1097,7 +1097,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x154 src/ASF/common/boards/user_board/init.o
  .debug_macro   0x00000000       0x3a src/ASF/common/boards/user_board/init.o
  .debug_line    0x00000000      0x5ad src/ASF/common/boards/user_board/init.o
- .debug_str     0x00000000    0x247fe src/ASF/common/boards/user_board/init.o
+ .debug_str     0x00000000    0x247ff src/ASF/common/boards/user_board/init.o
  .comment       0x00000000       0x31 src/ASF/common/boards/user_board/init.o
  .debug_frame   0x00000000       0x24 src/ASF/common/boards/user_board/init.o
  .group         0x00000000        0x8 src/main.o
@@ -2042,24 +2042,24 @@ END GROUP
  .debug_frame   0x0000035c       0xf0 src/twi_master_driver.o
  .debug_frame   0x0000044c       0xac src/main.o
 
-.debug_str      0x00000000    0x27701
+.debug_str      0x00000000    0x276bd
  *(.debug_str)
- .debug_str     0x00000000    0x24f4c src/ASF/xmega/drivers/usart/usart.o
-                              0x257c4 (size before relaxing)
- .debug_str     0x00024f4c     0x20f1 src/calculation.o
-                              0x26889 (size before relaxing)
- .debug_str     0x0002703d      0x19e src/initialize.o
-                              0x26374 (size before relaxing)
- .debug_str     0x000271db      0x10a src/MS5611.o
-                              0x26808 (size before relaxing)
- .debug_str     0x000272e5       0xb7 src/setting.o
-                              0x2683d (size before relaxing)
- .debug_str     0x0002739c      0x328 src/twi_master_driver.o
-                              0x19640 (size before relaxing)
- .debug_str     0x000276c4       0x12 src/variable.o
-                              0x267a5 (size before relaxing)
- .debug_str     0x000276d6       0x2b src/main.o
-                              0x267d7 (size before relaxing)
+ .debug_str     0x00000000    0x24f4d src/ASF/xmega/drivers/usart/usart.o
+                              0x257c5 (size before relaxing)
+ .debug_str     0x00024f4d     0x20f1 src/calculation.o
+                              0x2688a (size before relaxing)
+ .debug_str     0x0002703e      0x159 src/initialize.o
+                              0x2637b (size before relaxing)
+ .debug_str     0x00027197      0x10a src/MS5611.o
+                              0x26809 (size before relaxing)
+ .debug_str     0x000272a1       0xb7 src/setting.o
+                              0x2683e (size before relaxing)
+ .debug_str     0x00027358      0x328 src/twi_master_driver.o
+                              0x19652 (size before relaxing)
+ .debug_str     0x00027680       0x12 src/variable.o
+                              0x267a6 (size before relaxing)
+ .debug_str     0x00027692       0x2b src/main.o
+                              0x267d8 (size before relaxing)
 
 .debug_loc      0x00000000     0x1e3e
  *(.debug_loc)
@@ -2098,7 +2098,7 @@ END GROUP
  .debug_ranges  0x000000e8       0x60 src/twi_master_driver.o
  .debug_ranges  0x00000148       0x20 src/main.o
 
-.debug_macro    0x00000000     0xa275
+.debug_macro    0x00000000     0xa29f
  *(.debug_macro)
  .debug_macro   0x00000000      0x219 src/ASF/xmega/drivers/usart/usart.o
  .debug_macro   0x00000219      0xa3c src/ASF/xmega/drivers/usart/usart.o
@@ -2139,32 +2139,32 @@ END GROUP
  .debug_macro   0x00007fb9       0x2f src/ASF/xmega/drivers/usart/usart.o
  .debug_macro   0x00007fe8      0x154 src/ASF/xmega/drivers/usart/usart.o
  .debug_macro   0x0000813c       0x7c src/ASF/xmega/drivers/usart/usart.o
- .debug_macro   0x000081b8      0x2f1 src/calculation.o
- .debug_macro   0x000084a9      0x293 src/calculation.o
- .debug_macro   0x0000873c       0x34 src/calculation.o
- .debug_macro   0x00008770       0x26 src/calculation.o
- .debug_macro   0x00008796       0x3a src/calculation.o
- .debug_macro   0x000087d0      0x367 src/calculation.o
- .debug_macro   0x00008b37       0x16 src/calculation.o
- .debug_macro   0x00008b4d      0x167 src/calculation.o
- .debug_macro   0x00008cb4       0x2e src/calculation.o
- .debug_macro   0x00008ce2       0x22 src/calculation.o
- .debug_macro   0x00008d04       0x58 src/calculation.o
- .debug_macro   0x00008d5c       0x10 src/calculation.o
- .debug_macro   0x00008d6c       0xeb src/calculation.o
- .debug_macro   0x00008e57       0x16 src/calculation.o
- .debug_macro   0x00008e6d       0x28 src/calculation.o
- .debug_macro   0x00008e95      0x288 src/initialize.o
- .debug_macro   0x0000911d      0x361 src/initialize.o
- .debug_macro   0x0000947e      0x2e5 src/MS5611.o
- .debug_macro   0x00009763      0x2e5 src/setting.o
- .debug_macro   0x00009a48      0x10d src/twi_master_driver.o
- .debug_macro   0x00009b55       0x10 src/twi_master_driver.o
- .debug_macro   0x00009b65      0x10e src/twi_master_driver.o
- .debug_macro   0x00009c73       0x10 src/twi_master_driver.o
- .debug_macro   0x00009c83       0x12 src/twi_master_driver.o
- .debug_macro   0x00009c95       0x10 src/twi_master_driver.o
- .debug_macro   0x00009ca5      0x2e5 src/variable.o
- .debug_macro   0x00009f8a      0x2eb src/main.o
+ .debug_macro   0x000081b8      0x2f7 src/calculation.o
+ .debug_macro   0x000084af      0x293 src/calculation.o
+ .debug_macro   0x00008742       0x34 src/calculation.o
+ .debug_macro   0x00008776       0x26 src/calculation.o
+ .debug_macro   0x0000879c       0x3a src/calculation.o
+ .debug_macro   0x000087d6      0x367 src/calculation.o
+ .debug_macro   0x00008b3d       0x16 src/calculation.o
+ .debug_macro   0x00008b53      0x167 src/calculation.o
+ .debug_macro   0x00008cba       0x2e src/calculation.o
+ .debug_macro   0x00008ce8       0x22 src/calculation.o
+ .debug_macro   0x00008d0a       0x58 src/calculation.o
+ .debug_macro   0x00008d62       0x10 src/calculation.o
+ .debug_macro   0x00008d72       0xeb src/calculation.o
+ .debug_macro   0x00008e5d       0x16 src/calculation.o
+ .debug_macro   0x00008e73       0x28 src/calculation.o
+ .debug_macro   0x00008e9b      0x28e src/initialize.o
+ .debug_macro   0x00009129      0x361 src/initialize.o
+ .debug_macro   0x0000948a      0x2eb src/MS5611.o
+ .debug_macro   0x00009775      0x2eb src/setting.o
+ .debug_macro   0x00009a60      0x113 src/twi_master_driver.o
+ .debug_macro   0x00009b73       0x10 src/twi_master_driver.o
+ .debug_macro   0x00009b83      0x10e src/twi_master_driver.o
+ .debug_macro   0x00009c91       0x10 src/twi_master_driver.o
+ .debug_macro   0x00009ca1       0x12 src/twi_master_driver.o
+ .debug_macro   0x00009cb3       0x10 src/twi_master_driver.o
+ .debug_macro   0x00009cc3      0x2eb src/variable.o
+ .debug_macro   0x00009fae      0x2f1 src/main.o
 OUTPUT(MS5611_Hero2.elf elf32-avr)
 LOAD linker stubs

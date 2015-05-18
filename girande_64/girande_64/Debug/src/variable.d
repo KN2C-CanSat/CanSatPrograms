@@ -50,7 +50,7 @@ src/variable.d src/variable.o: ../src/variable.c ../src/asf.h \
  c:\program\ files\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\math.h \
  ../src/initialize.h ../src/nrf24l01_L.h ../src/nfr24l01.h \
- ../src/nrf24l01_R.h ../src/variable.h
+ ../src/variable.h ../src/nrf24l01_R.h
 
 ../src/asf.h:
 
@@ -168,6 +168,6 @@ c:\program\ files\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-tool
 
 ../src/nfr24l01.h:
 
-../src/nrf24l01_R.h:
-
 ../src/variable.h:
+
+../src/nrf24l01_R.h:

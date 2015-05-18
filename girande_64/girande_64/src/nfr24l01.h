@@ -11,7 +11,6 @@
 
 #include "initialize.h"
 #include <util/delay.h>
-#define	_Address_Width	5	// 3..5
-#define _Buffer_Size 11 // 1..32
+
 
 #endif /* NFR24L01_H_ */

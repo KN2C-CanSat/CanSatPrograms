@@ -5,11 +5,11 @@ c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolcha
 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_exit.o)
                               c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4/crtx64a3.o (exit)
 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_copy_data.o)
-                              src/nrf24l01_L.o (__do_copy_data)
+                              src/MPC.o (__do_copy_data)
 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_clear_bss.o)
-                              src/NRF_transmission.o (__do_clear_bss)
+                              src/MPC.o (__do_clear_bss)
 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(sprintf.o)
-                              src/NRF_transmission.o (sprintf)
+                              src/MPC.o (sprintf)
 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
                               c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(sprintf.o) (vfprintf)
 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
@@ -27,10 +27,12 @@ Common symbol       size              file
 buf_receive         0xb               src/variable.o
 flag                0x1               src/variable.o
 conv                0x2               src/variable.o
-Buf_Rx_L            0xb               src/variable.o
+finalpres           0x4               src/MPC.o
+Buf_Rx_L            0x20              src/variable.o
 Buf_Print           0x12              src/variable.o
-buffer              0x64              src/NRF_transmission.o
+buffer              0x64              src/MPC.o
 Nrf                 0x2               src/variable.o
+MPC                 0x7b              src/MPC.o
 
 Discarded input sections
 
@@ -178,6 +180,94 @@ Discarded input sections
  .debug_macro   0x00000000       0x66 src/initialize.o
  .debug_macro   0x00000000       0x2f src/initialize.o
  .debug_macro   0x00000000      0x13f src/initialize.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .group         0x00000000        0x8 src/MPC.o
+ .text          0x00000000        0x0 src/MPC.o
+ .data          0x00000000        0x0 src/MPC.o
+ .bss           0x00000000        0x0 src/MPC.o
+ .debug_macro   0x00000000      0xa4e src/MPC.o
+ .debug_macro   0x00000000       0x10 src/MPC.o
+ .debug_macro   0x00000000      0x1ad src/MPC.o
+ .debug_macro   0x00000000      0x293 src/MPC.o
+ .debug_macro   0x00000000       0x9e src/MPC.o
+ .debug_macro   0x00000000     0x4c9f src/MPC.o
+ .debug_macro   0x00000000       0x9a src/MPC.o
+ .debug_macro   0x00000000       0xf1 src/MPC.o
+ .debug_macro   0x00000000       0x34 src/MPC.o
+ .debug_macro   0x00000000       0x10 src/MPC.o
+ .debug_macro   0x00000000       0x18 src/MPC.o
+ .debug_macro   0x00000000       0x5e src/MPC.o
+ .debug_macro   0x00000000       0x10 src/MPC.o
+ .debug_macro   0x00000000       0x22 src/MPC.o
+ .debug_macro   0x00000000      0x166 src/MPC.o
+ .debug_macro   0x00000000       0x1c src/MPC.o
+ .debug_macro   0x00000000       0x35 src/MPC.o
+ .debug_macro   0x00000000       0x66 src/MPC.o
+ .debug_macro   0x00000000      0x4b5 src/MPC.o
+ .debug_macro   0x00000000       0x97 src/MPC.o
+ .debug_macro   0x00000000       0x17 src/MPC.o
+ .debug_macro   0x00000000      0x250 src/MPC.o
+ .debug_macro   0x00000000       0x76 src/MPC.o
+ .debug_macro   0x00000000       0x16 src/MPC.o
+ .debug_macro   0x00000000      0x6e0 src/MPC.o
+ .debug_macro   0x00000000       0x10 src/MPC.o
+ .debug_macro   0x00000000      0x175 src/MPC.o
+ .debug_macro   0x00000000       0x40 src/MPC.o
+ .debug_macro   0x00000000       0x69 src/MPC.o
+ .debug_macro   0x00000000       0x32 src/MPC.o
+ .debug_macro   0x00000000       0xe4 src/MPC.o
+ .debug_macro   0x00000000       0x34 src/MPC.o
+ .debug_macro   0x00000000      0x237 src/MPC.o
+ .debug_macro   0x00000000       0x82 src/MPC.o
+ .debug_macro   0x00000000       0x1c src/MPC.o
+ .debug_macro   0x00000000       0x66 src/MPC.o
+ .debug_macro   0x00000000       0x2f src/MPC.o
+ .debug_macro   0x00000000      0x13f src/MPC.o
+ .debug_macro   0x00000000       0x3a src/MPC.o
  .group         0x00000000        0x8 src/nrf24l01_L.o
  .group         0x00000000        0x8 src/nrf24l01_L.o
  .group         0x00000000        0x8 src/nrf24l01_L.o
@@ -290,6 +380,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x13f src/nrf24l01_L.o
  .debug_macro   0x00000000       0x3a src/nrf24l01_L.o
  .debug_macro   0x00000000      0x2d0 src/nrf24l01_L.o
+ .debug_macro   0x00000000      0x167 src/nrf24l01_L.o
+ .debug_macro   0x00000000       0x16 src/nrf24l01_L.o
  .group         0x00000000        0x8 src/nrf24l01_R.o
  .group         0x00000000        0x8 src/nrf24l01_R.o
  .group         0x00000000        0x8 src/nrf24l01_R.o
@@ -377,10 +469,6 @@ Discarded input sections
                 0x00000000        0xc src/nrf24l01_R.o
  .text.NRF24L01_R_Get_Status
                 0x00000000       0x24 src/nrf24l01_R.o
- .text.NRF24L01_R_Receive
-                0x00000000       0x3e src/nrf24l01_R.o
- .text.NRF24L01_R_Send
-                0x00000000       0x22 src/nrf24l01_R.o
  .text.NRF24L01_R_Flush_TX
                 0x00000000       0x1e src/nrf24l01_R.o
  .text.NRF24L01_R_Flush_RX
@@ -391,14 +479,15 @@ Discarded input sections
                 0x00000000        0x5 src/nrf24l01_R.o
  .data.Address_R_P2
                 0x00000000        0x5 src/nrf24l01_R.o
- .debug_info    0x00000000     0x1021 src/nrf24l01_R.o
+ .debug_info    0x00000000      0xf08 src/nrf24l01_R.o
  .debug_abbrev  0x00000000      0x2c3 src/nrf24l01_R.o
- .debug_loc     0x00000000      0xc2d src/nrf24l01_R.o
+ .debug_loc     0x00000000      0xba2 src/nrf24l01_R.o
  .debug_aranges
-                0x00000000       0xe0 src/nrf24l01_R.o
- .debug_ranges  0x00000000       0xd0 src/nrf24l01_R.o
+                0x00000000       0xd0 src/nrf24l01_R.o
+ .debug_ranges  0x00000000       0xc0 src/nrf24l01_R.o
  .debug_macro   0x00000000      0x27d src/nrf24l01_R.o
  .debug_macro   0x00000000      0xa4e src/nrf24l01_R.o
+ .debug_macro   0x00000000       0x10 src/nrf24l01_R.o
  .debug_macro   0x00000000       0x10 src/nrf24l01_R.o
  .debug_macro   0x00000000      0x1ad src/nrf24l01_R.o
  .debug_macro   0x00000000      0x293 src/nrf24l01_R.o
@@ -439,13 +528,11 @@ Discarded input sections
  .debug_macro   0x00000000       0x3a src/nrf24l01_R.o
  .debug_macro   0x00000000      0x2d0 src/nrf24l01_R.o
  .debug_macro   0x00000000      0x167 src/nrf24l01_R.o
- .debug_macro   0x00000000       0x10 src/nrf24l01_R.o
  .debug_macro   0x00000000      0x199 src/nrf24l01_R.o
- .debug_line    0x00000000      0xac2 src/nrf24l01_R.o
- .debug_str     0x00000000    0x24ee2 src/nrf24l01_R.o
+ .debug_line    0x00000000      0xa4a src/nrf24l01_R.o
+ .debug_str     0x00000000    0x24e9f src/nrf24l01_R.o
  .comment       0x00000000       0x31 src/nrf24l01_R.o
- .debug_frame   0x00000000      0x2d8 src/nrf24l01_R.o
- .group         0x00000000        0x8 src/NRF_transmission.o
+ .debug_frame   0x00000000      0x2ac src/nrf24l01_R.o
  .group         0x00000000        0x8 src/NRF_transmission.o
  .group         0x00000000        0x8 src/NRF_transmission.o
  .group         0x00000000        0x8 src/NRF_transmission.o
@@ -536,8 +623,12 @@ Discarded input sections
  .debug_macro   0x00000000       0x2f src/NRF_transmission.o
  .debug_macro   0x00000000      0x13f src/NRF_transmission.o
  .debug_macro   0x00000000       0x3a src/NRF_transmission.o
+ .debug_macro   0x00000000       0x58 src/NRF_transmission.o
+ .debug_macro   0x00000000       0x10 src/NRF_transmission.o
+ .debug_macro   0x00000000       0xeb src/NRF_transmission.o
+ .debug_macro   0x00000000       0x16 src/NRF_transmission.o
  .debug_macro   0x00000000      0x167 src/NRF_transmission.o
- .group         0x00000000        0x8 src/setting.o
+ .debug_macro   0x00000000       0x16 src/NRF_transmission.o
  .group         0x00000000        0x8 src/setting.o
  .group         0x00000000        0x8 src/setting.o
  .group         0x00000000        0x8 src/setting.o
@@ -636,9 +727,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x2d6 src/setting.o
  .debug_macro   0x00000000       0x16 src/setting.o
  .debug_macro   0x00000000      0x1b9 src/setting.o
- .debug_macro   0x00000000      0x19f src/setting.o
- .debug_macro   0x00000000       0x10 src/setting.o
- .group         0x00000000        0x8 src/variable.o
+ .debug_macro   0x00000000      0x1a5 src/setting.o
  .group         0x00000000        0x8 src/variable.o
  .group         0x00000000        0x8 src/variable.o
  .group         0x00000000        0x8 src/variable.o
@@ -737,8 +826,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x2d6 src/variable.o
  .debug_macro   0x00000000       0x16 src/variable.o
  .debug_macro   0x00000000      0x1b9 src/variable.o
- .debug_macro   0x00000000      0x19f src/variable.o
- .debug_macro   0x00000000       0x10 src/variable.o
+ .debug_macro   0x00000000      0x1a5 src/variable.o
  .group         0x00000000        0x8 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .group         0x00000000        0x8 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .group         0x00000000        0x8 src/ASF/common/services/ioport/xmega/ioport_compat.o
@@ -814,7 +902,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x82 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .debug_macro   0x00000000      0x109 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .debug_line    0x00000000      0x411 src/ASF/common/services/ioport/xmega/ioport_compat.o
- .debug_str     0x00000000    0x22332 src/ASF/common/services/ioport/xmega/ioport_compat.o
+ .debug_str     0x00000000    0x22348 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .comment       0x00000000       0x31 src/ASF/common/services/ioport/xmega/ioport_compat.o
  .group         0x00000000        0x8 src/ASF/common/services/clock/xmega/sysclk.o
  .group         0x00000000        0x8 src/ASF/common/services/clock/xmega/sysclk.o
@@ -905,7 +993,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x2f src/ASF/common/services/clock/xmega/sysclk.o
  .debug_macro   0x00000000      0x13f src/ASF/common/services/clock/xmega/sysclk.o
  .debug_line    0x00000000      0x50d src/ASF/common/services/clock/xmega/sysclk.o
- .debug_str     0x00000000    0x2306f src/ASF/common/services/clock/xmega/sysclk.o
+ .debug_str     0x00000000    0x23085 src/ASF/common/services/clock/xmega/sysclk.o
  .comment       0x00000000       0x31 src/ASF/common/services/clock/xmega/sysclk.o
  .debug_frame   0x00000000       0x44 src/ASF/common/services/clock/xmega/sysclk.o
  .group         0x00000000        0x8 src/ASF/xmega/drivers/spi/spi.o
@@ -981,7 +1069,7 @@ Discarded input sections
  .text.ccp_write_io
                 0x00000000        0xc src/ASF/xmega/drivers/cpu/ccp.o
  .debug_line    0x00000000       0x6e src/ASF/xmega/drivers/cpu/ccp.o
- .debug_info    0x00000000       0x7b src/ASF/xmega/drivers/cpu/ccp.o
+ .debug_info    0x00000000       0x91 src/ASF/xmega/drivers/cpu/ccp.o
  .debug_abbrev  0x00000000       0x14 src/ASF/xmega/drivers/cpu/ccp.o
  .debug_aranges
                 0x00000000       0x20 src/ASF/xmega/drivers/cpu/ccp.o
@@ -1075,7 +1163,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x13f src/ASF/common/boards/user_board/init.o
  .debug_macro   0x00000000       0x3a src/ASF/common/boards/user_board/init.o
  .debug_line    0x00000000      0x5ac src/ASF/common/boards/user_board/init.o
- .debug_str     0x00000000    0x231cf src/ASF/common/boards/user_board/init.o
+ .debug_str     0x00000000    0x231e5 src/ASF/common/boards/user_board/init.o
  .comment       0x00000000       0x31 src/ASF/common/boards/user_board/init.o
  .debug_frame   0x00000000       0x24 src/ASF/common/boards/user_board/init.o
  .group         0x00000000        0x8 src/main.o
@@ -1177,7 +1265,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x2d6 src/main.o
  .debug_macro   0x00000000       0x16 src/main.o
  .debug_macro   0x00000000      0x1b9 src/main.o
- .debug_macro   0x00000000      0x19f src/main.o
+ .debug_macro   0x00000000      0x1a5 src/main.o
  .debug_macro   0x00000000       0x10 src/main.o
  .text          0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_udivmodsi4.o)
  .data          0x00000000        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_udivmodsi4.o)
@@ -1277,6 +1365,7 @@ Linker script and memory map
 LOAD c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4/crtx64a3.o
 LOAD src/ASF/xmega/drivers/usart/usart.o
 LOAD src/initialize.o
+LOAD src/MPC.o
 LOAD src/nrf24l01_L.o
 LOAD src/nrf24l01_R.o
 LOAD src/NRF_transmission.o
@@ -1387,7 +1476,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x113c
+.text           0x00000000     0x124c
  *(.vectors)
  .vectors       0x00000000      0x1e8 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4/crtx64a3.o
                 0x00000000                __vector_default
@@ -1440,249 +1529,249 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000021e        0x4 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4/crtx64a3.o
+ .init9         0x0000021e        0x6 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4/crtx64a3.o
  *(.init9)
  *(.text)
- .text          0x00000222        0x2 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4/crtx64a3.o
-                0x00000222                __vector_38
-                0x00000222                __vector_104
-                0x00000222                __vector_22
-                0x00000222                __vector_63
-                0x00000222                __vector_28
-                0x00000222                __vector_67
-                0x00000222                __vector_1
-                0x00000222                __vector_119
-                0x00000222                __vector_32
-                0x00000222                __vector_75
-                0x00000222                __vector_71
-                0x00000222                __vector_91
-                0x00000222                __vector_34
-                0x00000222                __vector_62
-                0x00000222                __vector_102
-                0x00000222                __vector_24
-                0x00000222                __vector_12
-                0x00000222                __vector_55
-                0x00000222                __vector_69
-                0x00000222                __vector_81
-                0x00000222                __vector_90
-                0x00000222                __vector_46
-                0x00000222                __bad_interrupt
-                0x00000222                __vector_72
-                0x00000222                __vector_114
-                0x00000222                __vector_6
-                0x00000222                __vector_110
-                0x00000222                __vector_31
-                0x00000222                __vector_92
-                0x00000222                __vector_35
-                0x00000222                __vector_78
-                0x00000222                __vector_74
-                0x00000222                __vector_117
-                0x00000222                __vector_39
-                0x00000222                __vector_107
-                0x00000222                __vector_3
-                0x00000222                __vector_105
-                0x00000222                __vector_98
-                0x00000222                __vector_23
-                0x00000222                __vector_68
-                0x00000222                __vector_30
-                0x00000222                __vector_73
-                0x00000222                __vector_45
-                0x00000222                __vector_93
-                0x00000222                __vector_61
-                0x00000222                __vector_11
-                0x00000222                __vector_54
-                0x00000222                __vector_99
-                0x00000222                __vector_13
-                0x00000222                __vector_17
-                0x00000222                __vector_19
-                0x00000222                __vector_56
-                0x00000222                __vector_7
-                0x00000222                __vector_49
-                0x00000222                __vector_41
-                0x00000222                __vector_86
-                0x00000222                __vector_100
-                0x00000222                __vector_101
-                0x00000222                __vector_64
-                0x00000222                __vector_88
-                0x00000222                __vector_109
-                0x00000222                __vector_27
-                0x00000222                __vector_5
-                0x00000222                __vector_113
-                0x00000222                __vector_33
-                0x00000222                __vector_76
-                0x00000222                __vector_115
-                0x00000222                __vector_47
-                0x00000222                __vector_52
-                0x00000222                __vector_37
-                0x00000222                __vector_95
-                0x00000222                __vector_103
-                0x00000222                __vector_96
-                0x00000222                __vector_89
-                0x00000222                __vector_108
-                0x00000222                __vector_4
-                0x00000222                __vector_44
-                0x00000222                __vector_82
-                0x00000222                __vector_106
-                0x00000222                __vector_118
-                0x00000222                __vector_51
-                0x00000222                __vector_9
-                0x00000222                __vector_21
-                0x00000222                __vector_15
-                0x00000222                __vector_66
-                0x00000222                __vector_36
-                0x00000222                __vector_79
-                0x00000222                __vector_58
-                0x00000222                __vector_70
-                0x00000222                __vector_83
-                0x00000222                __vector_29
-                0x00000222                __vector_60
-                0x00000222                __vector_121
-                0x00000222                __vector_40
-                0x00000222                __vector_85
-                0x00000222                __vector_94
-                0x00000222                __vector_8
-                0x00000222                __vector_48
-                0x00000222                __vector_116
-                0x00000222                __vector_112
-                0x00000222                __vector_111
-                0x00000222                __vector_80
-                0x00000222                __vector_14
-                0x00000222                __vector_84
-                0x00000222                __vector_57
-                0x00000222                __vector_53
-                0x00000222                __vector_10
-                0x00000222                __vector_50
-                0x00000222                __vector_16
-                0x00000222                __vector_59
-                0x00000222                __vector_18
-                0x00000222                __vector_97
-                0x00000222                __vector_20
-                0x00000222                __vector_42
-                0x00000222                __vector_87
-                0x00000222                __vector_65
-                0x00000222                __vector_120
-                0x00000224                . = ALIGN (0x2)
+ .text          0x00000224        0x2 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4/crtx64a3.o
+                0x00000224                __vector_38
+                0x00000224                __vector_104
+                0x00000224                __vector_22
+                0x00000224                __vector_63
+                0x00000224                __vector_28
+                0x00000224                __vector_67
+                0x00000224                __vector_1
+                0x00000224                __vector_119
+                0x00000224                __vector_32
+                0x00000224                __vector_75
+                0x00000224                __vector_71
+                0x00000224                __vector_91
+                0x00000224                __vector_34
+                0x00000224                __vector_62
+                0x00000224                __vector_102
+                0x00000224                __vector_24
+                0x00000224                __vector_12
+                0x00000224                __vector_55
+                0x00000224                __vector_69
+                0x00000224                __vector_81
+                0x00000224                __vector_90
+                0x00000224                __vector_46
+                0x00000224                __bad_interrupt
+                0x00000224                __vector_72
+                0x00000224                __vector_114
+                0x00000224                __vector_6
+                0x00000224                __vector_110
+                0x00000224                __vector_31
+                0x00000224                __vector_92
+                0x00000224                __vector_35
+                0x00000224                __vector_78
+                0x00000224                __vector_74
+                0x00000224                __vector_117
+                0x00000224                __vector_39
+                0x00000224                __vector_107
+                0x00000224                __vector_3
+                0x00000224                __vector_105
+                0x00000224                __vector_98
+                0x00000224                __vector_23
+                0x00000224                __vector_68
+                0x00000224                __vector_30
+                0x00000224                __vector_73
+                0x00000224                __vector_45
+                0x00000224                __vector_93
+                0x00000224                __vector_61
+                0x00000224                __vector_11
+                0x00000224                __vector_54
+                0x00000224                __vector_99
+                0x00000224                __vector_13
+                0x00000224                __vector_17
+                0x00000224                __vector_19
+                0x00000224                __vector_56
+                0x00000224                __vector_7
+                0x00000224                __vector_49
+                0x00000224                __vector_41
+                0x00000224                __vector_86
+                0x00000224                __vector_100
+                0x00000224                __vector_101
+                0x00000224                __vector_64
+                0x00000224                __vector_88
+                0x00000224                __vector_109
+                0x00000224                __vector_27
+                0x00000224                __vector_5
+                0x00000224                __vector_113
+                0x00000224                __vector_33
+                0x00000224                __vector_76
+                0x00000224                __vector_115
+                0x00000224                __vector_47
+                0x00000224                __vector_52
+                0x00000224                __vector_37
+                0x00000224                __vector_95
+                0x00000224                __vector_103
+                0x00000224                __vector_96
+                0x00000224                __vector_89
+                0x00000224                __vector_108
+                0x00000224                __vector_4
+                0x00000224                __vector_44
+                0x00000224                __vector_82
+                0x00000224                __vector_106
+                0x00000224                __vector_118
+                0x00000224                __vector_51
+                0x00000224                __vector_9
+                0x00000224                __vector_21
+                0x00000224                __vector_15
+                0x00000224                __vector_66
+                0x00000224                __vector_36
+                0x00000224                __vector_79
+                0x00000224                __vector_58
+                0x00000224                __vector_70
+                0x00000224                __vector_83
+                0x00000224                __vector_29
+                0x00000224                __vector_60
+                0x00000224                __vector_121
+                0x00000224                __vector_40
+                0x00000224                __vector_85
+                0x00000224                __vector_94
+                0x00000224                __vector_8
+                0x00000224                __vector_48
+                0x00000224                __vector_116
+                0x00000224                __vector_112
+                0x00000224                __vector_111
+                0x00000224                __vector_80
+                0x00000224                __vector_14
+                0x00000224                __vector_84
+                0x00000224                __vector_57
+                0x00000224                __vector_53
+                0x00000224                __vector_10
+                0x00000224                __vector_50
+                0x00000224                __vector_16
+                0x00000224                __vector_59
+                0x00000224                __vector_18
+                0x00000224                __vector_97
+                0x00000224                __vector_20
+                0x00000224                __vector_42
+                0x00000224                __vector_87
+                0x00000224                __vector_65
+                0x00000224                __vector_120
+                0x00000226                . = ALIGN (0x2)
  *(.text.*)
  .text.usart_putchar
-                0x00000224       0x10 src/ASF/xmega/drivers/usart/usart.o
-                0x00000224                usart_putchar
+                0x00000226       0x10 src/ASF/xmega/drivers/usart/usart.o
+                0x00000226                usart_putchar
  .text.usart_set_baudrate
-                0x00000234      0x20c src/ASF/xmega/drivers/usart/usart.o
-                0x00000234                usart_set_baudrate
+                0x00000236      0x20c src/ASF/xmega/drivers/usart/usart.o
+                0x00000236                usart_set_baudrate
  .text.En_RC32M
-                0x00000440       0x2a src/initialize.o
-                0x00000440                En_RC32M
+                0x00000442       0x2a src/initialize.o
+                0x00000442                En_RC32M
  .text.PORT_init
-                0x0000046a       0x86 src/initialize.o
-                0x0000046a                PORT_init
+                0x0000046c       0x86 src/initialize.o
+                0x0000046c                PORT_init
  .text.USART_R_init
-                0x000004f0       0x4a src/initialize.o
-                0x000004f0                USART_R_init
- .text.SPI_L    0x0000053a       0x14 src/nrf24l01_L.o
-                0x0000053a                SPI_L
- .text.NRF24L01_L_ReadReg
-                0x0000054e       0x1e src/nrf24l01_L.o
-                0x0000054e                NRF24L01_L_ReadReg
- .text.NRF24L01_L_WriteReg
-                0x0000056c       0x2c src/nrf24l01_L.o
-                0x0000056c                NRF24L01_L_WriteReg
- .text.NRF24L01_L_Set_CH
-                0x00000598        0xa src/nrf24l01_L.o
-                0x00000598                NRF24L01_L_Set_CH
- .text.NRF24L01_L_Set_ShockBurst
-                0x000005a2       0x14 src/nrf24l01_L.o
-                0x000005a2                NRF24L01_L_Set_ShockBurst
- .text.NRF24L01_L_Set_Address_Width
-                0x000005b6        0x8 src/nrf24l01_L.o
-                0x000005b6                NRF24L01_L_Set_Address_Width
- .text.NRF24L01_L_Clear_Interrupts
-                0x000005be        0x8 src/nrf24l01_L.o
-                0x000005be                NRF24L01_L_Clear_Interrupts
- .text.NRF24L01_L_ReadRegBuf
-                0x000005c6       0x50 src/nrf24l01_L.o
-                0x000005c6                NRF24L01_L_ReadRegBuf
- .text.NRF24L01_L_Read_RX_Buf
-                0x00000616        0xa src/nrf24l01_L.o
-                0x00000616                NRF24L01_L_Read_RX_Buf
- .text.NRF24L01_L_WriteRegBuf
-                0x00000620       0x4e src/nrf24l01_L.o
-                0x00000620                NRF24L01_L_WriteRegBuf
- .text.NRF24L01_L_Set_RX_Pipe
-                0x0000066e       0x6a src/nrf24l01_L.o
-                0x0000066e                NRF24L01_L_Set_RX_Pipe
- .text.NRF24L01_L_Set_TX_Address
-                0x000006d8        0xa src/nrf24l01_L.o
-                0x000006d8                NRF24L01_L_Set_TX_Address
- .text.NRF24L01_L_Init
-                0x000006e2       0x6a src/nrf24l01_L.o
-                0x000006e2                NRF24L01_L_Init
- .text.NRF24L01_L_Flush_TX
-                0x0000074c       0x1c src/nrf24l01_L.o
-                0x0000074c                NRF24L01_L_Flush_TX
- .text.NRF24L01_L_Flush_RX
-                0x00000768       0x1c src/nrf24l01_L.o
-                0x00000768                NRF24L01_L_Flush_RX
+                0x000004f2       0x4a src/initialize.o
+                0x000004f2                USART_R_init
  .text.UART_SEND
-                0x00000784       0x30 src/NRF_transmission.o
-                0x00000784                UART_SEND
+                0x0000053c       0x30 src/MPC.o
+                0x0000053c                UART_SEND
+ .text.Mpc_decode
+                0x0000056c      0x230 src/MPC.o
+                0x0000056c                Mpc_decode
+ .text.SPI_L    0x0000079c       0x14 src/nrf24l01_L.o
+                0x0000079c                SPI_L
+ .text.NRF24L01_L_ReadReg
+                0x000007b0       0x1e src/nrf24l01_L.o
+                0x000007b0                NRF24L01_L_ReadReg
+ .text.NRF24L01_L_WriteReg
+                0x000007ce       0x2c src/nrf24l01_L.o
+                0x000007ce                NRF24L01_L_WriteReg
+ .text.NRF24L01_L_Set_CH
+                0x000007fa        0xa src/nrf24l01_L.o
+                0x000007fa                NRF24L01_L_Set_CH
+ .text.NRF24L01_L_Set_ShockBurst
+                0x00000804       0x14 src/nrf24l01_L.o
+                0x00000804                NRF24L01_L_Set_ShockBurst
+ .text.NRF24L01_L_Set_Address_Width
+                0x00000818        0x8 src/nrf24l01_L.o
+                0x00000818                NRF24L01_L_Set_Address_Width
+ .text.NRF24L01_L_Clear_Interrupts
+                0x00000820        0x8 src/nrf24l01_L.o
+                0x00000820                NRF24L01_L_Clear_Interrupts
+ .text.NRF24L01_L_ReadRegBuf
+                0x00000828       0x50 src/nrf24l01_L.o
+                0x00000828                NRF24L01_L_ReadRegBuf
+ .text.NRF24L01_L_Read_RX_Buf
+                0x00000878        0xa src/nrf24l01_L.o
+                0x00000878                NRF24L01_L_Read_RX_Buf
+ .text.NRF24L01_L_WriteRegBuf
+                0x00000882       0x4e src/nrf24l01_L.o
+                0x00000882                NRF24L01_L_WriteRegBuf
+ .text.NRF24L01_L_Set_RX_Pipe
+                0x000008d0       0x6a src/nrf24l01_L.o
+                0x000008d0                NRF24L01_L_Set_RX_Pipe
+ .text.NRF24L01_L_Set_TX_Address
+                0x0000093a        0xa src/nrf24l01_L.o
+                0x0000093a                NRF24L01_L_Set_TX_Address
+ .text.NRF24L01_L_Init
+                0x00000944       0x6a src/nrf24l01_L.o
+                0x00000944                NRF24L01_L_Init
+ .text.NRF24L01_L_Flush_TX
+                0x000009ae       0x1c src/nrf24l01_L.o
+                0x000009ae                NRF24L01_L_Flush_TX
+ .text.NRF24L01_L_Flush_RX
+                0x000009ca       0x1c src/nrf24l01_L.o
+                0x000009ca                NRF24L01_L_Flush_RX
  .text.NRF_init
-                0x000007b4       0x76 src/NRF_transmission.o
-                0x000007b4                NRF_init
+                0x000009e6       0x74 src/NRF_transmission.o
+                0x000009e6                NRF_init
  .text.NRF_receive
-                0x0000082a       0x4a src/NRF_transmission.o
-                0x0000082a                NRF_receive
- .text.NRF_decode
-                0x00000874      0x142 src/NRF_transmission.o
-                0x00000874                NRF_decode
+                0x00000a5a       0x4a src/NRF_transmission.o
+                0x00000a5a                NRF_receive
  .text.set_micro
-                0x000009b6       0x42 src/setting.o
-                0x000009b6                set_micro
+                0x00000aa4       0x42 src/setting.o
+                0x00000aa4                set_micro
  .text.spi_xmega_set_baud_div
-                0x000009f8       0x8e src/ASF/xmega/drivers/spi/spi.o
-                0x000009f8                spi_xmega_set_baud_div
- .text.main     0x00000a86       0x56 src/main.o
-                0x00000a86                main
+                0x00000ae6       0x8e src/ASF/xmega/drivers/spi/spi.o
+                0x00000ae6                spi_xmega_set_baud_div
+ .text.main     0x00000b74       0x78 src/main.o
+                0x00000b74                main
  .text.__vector_77
-                0x00000adc       0x14 src/main.o
-                0x00000adc                __vector_77
+                0x00000bec       0x14 src/main.o
+                0x00000bec                __vector_77
  .text.__vector_43
-                0x00000af0       0x5c src/main.o
-                0x00000af0                __vector_43
+                0x00000c00       0x5c src/main.o
+                0x00000c00                __vector_43
  .text.__vector_2
-                0x00000b4c       0x14 src/main.o
-                0x00000b4c                __vector_2
+                0x00000c5c       0x14 src/main.o
+                0x00000c5c                __vector_2
  .text.__vector_25
-                0x00000b60       0x14 src/main.o
-                0x00000b60                __vector_25
+                0x00000c70       0x14 src/main.o
+                0x00000c70                __vector_25
  .text.__vector_26
-                0x00000b74       0x14 src/main.o
-                0x00000b74                __vector_26
+                0x00000c84       0x14 src/main.o
+                0x00000c84                __vector_26
  .text.libgcc.div
-                0x00000b88       0x44 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_udivmodsi4.o)
-                0x00000b88                __udivmodsi4
+                0x00000c98       0x44 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_udivmodsi4.o)
+                0x00000c98                __udivmodsi4
  .text.avr-libc
-                0x00000bcc       0x50 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(sprintf.o)
-                0x00000bcc                sprintf
+                0x00000cdc       0x50 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(sprintf.o)
+                0x00000cdc                sprintf
  .text.avr-libc
-                0x00000c1c      0x3d0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
-                0x00000c1c                vfprintf
+                0x00000d2c      0x3d0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
+                0x00000d2c                vfprintf
  .text.avr-libc
-                0x00000fec       0x16 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
-                0x00000fec                strnlen_P
+                0x000010fc       0x16 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+                0x000010fc                strnlen_P
  .text.avr-libc
-                0x00001002       0x16 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
-                0x00001002                strnlen
+                0x00001112       0x16 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+                0x00001112                strnlen
  .text.avr-libc
-                0x00001018       0x64 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
-                0x00001018                fputc
+                0x00001128       0x64 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+                0x00001128                fputc
  .text.avr-libc
-                0x0000107c       0xbc c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
-                0x0000107c                __ultoa_invert
-                0x00001138                . = ALIGN (0x2)
+                0x0000118c       0xbc c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+                0x0000118c                __ultoa_invert
+                0x00001248                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001138        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_exit.o)
-                0x00001138                _exit
-                0x00001138                exit
+ .fini9         0x00001248        0x0 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_exit.o)
+                0x00001248                _exit
+                0x00001248                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -1701,11 +1790,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001138        0x4 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_exit.o)
+ .fini0         0x00001248        0x4 c:/program files/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avrxmega4\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000113c                _etext = .
+                0x0000124c                _etext = .
 
-.data           0x00802000       0x2a load address 0x0000113c
+.data           0x00802000       0x14 load address 0x0000124c
                 0x00802000                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -1717,39 +1806,42 @@ END GROUP
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00802006       0x24 src/NRF_transmission.o
+                0x00802006        0xe src/MPC.o
+                                 0x12 (size before relaxing)
  *(.gnu.linkonce.d*)
-                0x0080202a                . = ALIGN (0x2)
-                0x0080202a                _edata = .
-                0x0080202a                PROVIDE (__data_end, .)
+                0x00802014                . = ALIGN (0x2)
+                0x00802014                _edata = .
+                0x00802014                PROVIDE (__data_end, .)
 
-.bss            0x0080202a       0x92
-                0x0080202a                PROVIDE (__bss_start, .)
+.bss            0x00802014      0x126
+                0x00802014                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.decode_flag
-                0x0080202a        0x1 src/variable.o
-                0x0080202a                decode_flag
+                0x00802014        0x1 src/variable.o
+                0x00802014                decode_flag
  *(COMMON)
- COMMON         0x0080202b       0x64 src/NRF_transmission.o
-                0x0080202b                buffer
- COMMON         0x0080208f       0x2d src/variable.o
-                0x0080208f                buf_receive
-                0x0080209a                flag
-                0x0080209b                conv
-                0x0080209d                Buf_Rx_L
-                0x008020a8                Buf_Print
-                0x008020ba                Nrf
-                0x008020bc                PROVIDE (__bss_end, .)
-                0x0000113c                __data_load_start = LOADADDR (.data)
-                0x00001166                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00802015       0xe3 src/MPC.o
+                0x00802015                finalpres
+                0x00802019                buffer
+                0x0080207d                MPC
+ COMMON         0x008020f8       0x42 src/variable.o
+                0x008020f8                buf_receive
+                0x00802103                flag
+                0x00802104                conv
+                0x00802106                Buf_Rx_L
+                0x00802126                Buf_Print
+                0x00802138                Nrf
+                0x0080213a                PROVIDE (__bss_end, .)
+                0x0000124c                __data_load_start = LOADADDR (.data)
+                0x00001260                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008020bc        0x0
-                0x008020bc                PROVIDE (__noinit_start, .)
+.noinit         0x0080213a        0x0
+                0x0080213a                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008020bc                PROVIDE (__noinit_end, .)
-                0x008020bc                _end = .
-                0x008020bc                PROVIDE (__heap_start, .)
+                0x0080213a                PROVIDE (__noinit_end, .)
+                0x0080213a                _end = .
+                0x0080213a                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1793,6 +1885,7 @@ END GROUP
  .comment       0x00000000       0x30 src/ASF/xmega/drivers/usart/usart.o
                                  0x31 (size before relaxing)
  .comment       0x00000000       0x31 src/initialize.o
+ .comment       0x00000000       0x31 src/MPC.o
  .comment       0x00000000       0x31 src/nrf24l01_L.o
  .comment       0x00000000       0x31 src/NRF_transmission.o
  .comment       0x00000000       0x31 src/setting.o
@@ -1819,99 +1912,108 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x258
+.debug_aranges  0x00000000      0x270
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x58 src/ASF/xmega/drivers/usart/usart.o
  .debug_aranges
                 0x00000058       0x48 src/initialize.o
  .debug_aranges
-                0x000000a0       0xe0 src/nrf24l01_L.o
+                0x000000a0       0x28 src/MPC.o
  .debug_aranges
-                0x00000180       0x38 src/NRF_transmission.o
+                0x000000c8       0xe0 src/nrf24l01_L.o
  .debug_aranges
-                0x000001b8       0x20 src/setting.o
+                0x000001a8       0x28 src/NRF_transmission.o
  .debug_aranges
-                0x000001d8       0x18 src/variable.o
+                0x000001d0       0x20 src/setting.o
  .debug_aranges
-                0x000001f0       0x20 src/ASF/xmega/drivers/spi/spi.o
+                0x000001f0       0x18 src/variable.o
  .debug_aranges
-                0x00000210       0x48 src/main.o
+                0x00000208       0x20 src/ASF/xmega/drivers/spi/spi.o
+ .debug_aranges
+                0x00000228       0x48 src/main.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x585e
+.debug_info     0x00000000     0x5c14
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0x2f76 src/ASF/xmega/drivers/usart/usart.o
  .debug_info    0x00002f76      0x847 src/initialize.o
- .debug_info    0x000037bd     0x1021 src/nrf24l01_L.o
- .debug_info    0x000047de      0x7da src/NRF_transmission.o
- .debug_info    0x00004fb8      0x266 src/setting.o
- .debug_info    0x0000521e      0x203 src/variable.o
- .debug_info    0x00005421      0x1b9 src/ASF/xmega/drivers/spi/spi.o
- .debug_info    0x000055da      0x284 src/main.o
+ .debug_info    0x000037bd      0x475 src/MPC.o
+ .debug_info    0x00003c32     0x1023 src/nrf24l01_L.o
+ .debug_info    0x00004c55      0x56a src/NRF_transmission.o
+ .debug_info    0x000051bf      0x266 src/setting.o
+ .debug_info    0x00005425      0x213 src/variable.o
+ .debug_info    0x00005638      0x1b9 src/ASF/xmega/drivers/spi/spi.o
+ .debug_info    0x000057f1      0x423 src/main.o
 
-.debug_abbrev   0x00000000      0xf7a
+.debug_abbrev   0x00000000     0x110f
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x3e8 src/ASF/xmega/drivers/usart/usart.o
  .debug_abbrev  0x000003e8      0x1bc src/initialize.o
- .debug_abbrev  0x000005a4      0x2c3 src/nrf24l01_L.o
- .debug_abbrev  0x00000867      0x2c3 src/NRF_transmission.o
- .debug_abbrev  0x00000b2a      0x13c src/setting.o
- .debug_abbrev  0x00000c66       0xc5 src/variable.o
- .debug_abbrev  0x00000d2b       0xf6 src/ASF/xmega/drivers/spi/spi.o
- .debug_abbrev  0x00000e21      0x159 src/main.o
+ .debug_abbrev  0x000005a4      0x1e6 src/MPC.o
+ .debug_abbrev  0x0000078a      0x2c3 src/nrf24l01_L.o
+ .debug_abbrev  0x00000a4d      0x1e8 src/NRF_transmission.o
+ .debug_abbrev  0x00000c35      0x13c src/setting.o
+ .debug_abbrev  0x00000d71       0xc5 src/variable.o
+ .debug_abbrev  0x00000e36       0xf6 src/ASF/xmega/drivers/spi/spi.o
+ .debug_abbrev  0x00000f2c      0x1e3 src/main.o
 
-.debug_line     0x00000000     0x408a
+.debug_line     0x00000000     0x47b3
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0xc6d src/ASF/xmega/drivers/usart/usart.o
  .debug_line    0x00000c6d      0x75d src/initialize.o
- .debug_line    0x000013ca      0xac2 src/nrf24l01_L.o
- .debug_line    0x00001e8c      0x85a src/NRF_transmission.o
- .debug_line    0x000026e6      0x6f1 src/setting.o
- .debug_line    0x00002dd7      0x699 src/variable.o
- .debug_line    0x00003470      0x474 src/ASF/xmega/drivers/spi/spi.o
- .debug_line    0x000038e4      0x7a6 src/main.o
+ .debug_line    0x000013ca      0x7d3 src/MPC.o
+ .debug_line    0x00001b9d      0xad0 src/nrf24l01_L.o
+ .debug_line    0x0000266d      0x78d src/NRF_transmission.o
+ .debug_line    0x00002dfa      0x6f1 src/setting.o
+ .debug_line    0x000034eb      0x699 src/variable.o
+ .debug_line    0x00003b84      0x474 src/ASF/xmega/drivers/spi/spi.o
+ .debug_line    0x00003ff8      0x7bb src/main.o
 
-.debug_frame    0x00000000      0x764
+.debug_frame    0x00000000      0x778
  *(.debug_frame)
  .debug_frame   0x00000000      0x140 src/ASF/xmega/drivers/usart/usart.o
  .debug_frame   0x00000140       0xe0 src/initialize.o
- .debug_frame   0x00000220      0x2d8 src/nrf24l01_L.o
- .debug_frame   0x000004f8      0x104 src/NRF_transmission.o
- .debug_frame   0x000005fc       0x30 src/setting.o
- .debug_frame   0x0000062c       0x4c src/ASF/xmega/drivers/spi/spi.o
- .debug_frame   0x00000678       0xec src/main.o
+ .debug_frame   0x00000220       0xbc src/MPC.o
+ .debug_frame   0x000002dc      0x2d8 src/nrf24l01_L.o
+ .debug_frame   0x000005b4       0x5c src/NRF_transmission.o
+ .debug_frame   0x00000610       0x30 src/setting.o
+ .debug_frame   0x00000640       0x4c src/ASF/xmega/drivers/spi/spi.o
+ .debug_frame   0x0000068c       0xec src/main.o
 
-.debug_str      0x00000000    0x26379
+.debug_str      0x00000000    0x263cf
  *(.debug_str)
- .debug_str     0x00000000    0x23970 src/ASF/xmega/drivers/usart/usart.o
-                              0x2421a (size before relaxing)
- .debug_str     0x00023970     0x142c src/initialize.o
-                              0x24800 (size before relaxing)
- .debug_str     0x00024d9c      0xba1 src/nrf24l01_L.o
-                              0x24f2b (size before relaxing)
- .debug_str     0x0002593d      0x8c1 src/NRF_transmission.o
-                              0x25703 (size before relaxing)
- .debug_str     0x000261fe       0x54 src/setting.o
-                              0x25367 (size before relaxing)
- .debug_str     0x00026252       0x28 src/variable.o
-                              0x25327 (size before relaxing)
- .debug_str     0x0002627a       0xb1 src/ASF/xmega/drivers/spi/spi.o
-                              0x220af (size before relaxing)
- .debug_str     0x0002632b       0x4e src/main.o
-                              0x253a9 (size before relaxing)
+ .debug_str     0x00000000    0x23986 src/ASF/xmega/drivers/usart/usart.o
+                              0x24230 (size before relaxing)
+ .debug_str     0x00023986     0x13d4 src/initialize.o
+                              0x247f0 (size before relaxing)
+ .debug_str     0x00024d5a      0xb39 src/MPC.o
+                              0x23eac (size before relaxing)
+ .debug_str     0x00025893      0x7d4 src/nrf24l01_L.o
+                              0x24f28 (size before relaxing)
+ .debug_str     0x00026067      0x1cd src/NRF_transmission.o
+                              0x254ba (size before relaxing)
+ .debug_str     0x00026234       0x54 src/setting.o
+                              0x2534e (size before relaxing)
+ .debug_str     0x00026288       0x48 src/variable.o
+                              0x2530e (size before relaxing)
+ .debug_str     0x000262d0       0xb1 src/ASF/xmega/drivers/spi/spi.o
+                              0x220c5 (size before relaxing)
+ .debug_str     0x00026381       0x4e src/main.o
+                              0x2542f (size before relaxing)
 
-.debug_loc      0x00000000     0x2465
+.debug_loc      0x00000000     0x246c
  *(.debug_loc)
  .debug_loc     0x00000000      0xfd3 src/ASF/xmega/drivers/usart/usart.o
  .debug_loc     0x00000fd3      0x25f src/initialize.o
- .debug_loc     0x00001232      0xc2d src/nrf24l01_L.o
- .debug_loc     0x00001e5f      0x34b src/NRF_transmission.o
- .debug_loc     0x000021aa       0x2f src/setting.o
- .debug_loc     0x000021d9      0x105 src/ASF/xmega/drivers/spi/spi.o
- .debug_loc     0x000022de      0x187 src/main.o
+ .debug_loc     0x00001232      0x285 src/MPC.o
+ .debug_loc     0x000014b7      0xc2d src/nrf24l01_L.o
+ .debug_loc     0x000020e4       0xb9 src/NRF_transmission.o
+ .debug_loc     0x0000219d       0x2f src/setting.o
+ .debug_loc     0x000021cc      0x105 src/ASF/xmega/drivers/spi/spi.o
+ .debug_loc     0x000022d1      0x19b src/main.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1931,17 +2033,18 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x208
+.debug_ranges   0x00000000      0x210
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x80 src/ASF/xmega/drivers/usart/usart.o
  .debug_ranges  0x00000080       0x38 src/initialize.o
- .debug_ranges  0x000000b8       0xd0 src/nrf24l01_L.o
- .debug_ranges  0x00000188       0x28 src/NRF_transmission.o
- .debug_ranges  0x000001b0       0x10 src/setting.o
- .debug_ranges  0x000001c0       0x10 src/ASF/xmega/drivers/spi/spi.o
- .debug_ranges  0x000001d0       0x38 src/main.o
+ .debug_ranges  0x000000b8       0x18 src/MPC.o
+ .debug_ranges  0x000000d0       0xd0 src/nrf24l01_L.o
+ .debug_ranges  0x000001a0       0x18 src/NRF_transmission.o
+ .debug_ranges  0x000001b8       0x10 src/setting.o
+ .debug_ranges  0x000001c8       0x10 src/ASF/xmega/drivers/spi/spi.o
+ .debug_ranges  0x000001d8       0x38 src/main.o
 
-.debug_macro    0x00000000     0x9c45
+.debug_macro    0x00000000     0x9f10
  *(.debug_macro)
  .debug_macro   0x00000000      0x219 src/ASF/xmega/drivers/usart/usart.o
  .debug_macro   0x00000219      0xa4e src/ASF/xmega/drivers/usart/usart.o
@@ -1987,23 +2090,23 @@ END GROUP
  .debug_macro   0x00007eaf       0x34 src/initialize.o
  .debug_macro   0x00007ee3       0x3a src/initialize.o
  .debug_macro   0x00007f1d      0x2d0 src/initialize.o
- .debug_macro   0x000081ed      0x27d src/nrf24l01_L.o
- .debug_macro   0x0000846a      0x167 src/nrf24l01_L.o
- .debug_macro   0x000085d1       0x10 src/nrf24l01_L.o
- .debug_macro   0x000085e1      0x1b9 src/nrf24l01_L.o
- .debug_macro   0x0000879a      0x2e7 src/NRF_transmission.o
- .debug_macro   0x00008a81       0x58 src/NRF_transmission.o
- .debug_macro   0x00008ad9       0x10 src/NRF_transmission.o
- .debug_macro   0x00008ae9       0xeb src/NRF_transmission.o
- .debug_macro   0x00008bd4       0x16 src/NRF_transmission.o
- .debug_macro   0x00008bea      0x2d6 src/NRF_transmission.o
- .debug_macro   0x00008ec0       0x16 src/NRF_transmission.o
- .debug_macro   0x00008ed6      0x1b9 src/NRF_transmission.o
- .debug_macro   0x0000908f      0x19f src/NRF_transmission.o
- .debug_macro   0x0000922e       0x10 src/NRF_transmission.o
- .debug_macro   0x0000923e      0x2d1 src/setting.o
- .debug_macro   0x0000950f      0x2c7 src/variable.o
- .debug_macro   0x000097d6      0x194 src/ASF/xmega/drivers/spi/spi.o
- .debug_macro   0x0000996a      0x2db src/main.o
+ .debug_macro   0x000081ed      0x2b2 src/MPC.o
+ .debug_macro   0x0000849f       0x10 src/MPC.o
+ .debug_macro   0x000084af      0x167 src/MPC.o
+ .debug_macro   0x00008616       0x58 src/MPC.o
+ .debug_macro   0x0000866e       0x10 src/MPC.o
+ .debug_macro   0x0000867e       0xeb src/MPC.o
+ .debug_macro   0x00008769       0x16 src/MPC.o
+ .debug_macro   0x0000877f       0x16 src/MPC.o
+ .debug_macro   0x00008795      0x287 src/nrf24l01_L.o
+ .debug_macro   0x00008a1c      0x1b9 src/nrf24l01_L.o
+ .debug_macro   0x00008bd5      0x2e2 src/NRF_transmission.o
+ .debug_macro   0x00008eb7      0x2d6 src/NRF_transmission.o
+ .debug_macro   0x0000918d      0x1b9 src/NRF_transmission.o
+ .debug_macro   0x00009346      0x1a5 src/NRF_transmission.o
+ .debug_macro   0x000094eb      0x2d8 src/setting.o
+ .debug_macro   0x000097c3      0x2ce src/variable.o
+ .debug_macro   0x00009a91      0x194 src/ASF/xmega/drivers/spi/spi.o
+ .debug_macro   0x00009c25      0x2eb src/main.o
 OUTPUT(girande_64.elf elf32-avr)
 LOAD linker stubs

@@ -8,6 +8,8 @@
 
 #ifndef VARIABLE_H_
 #define VARIABLE_H_
+#define	_Address_Width	5	// 3..5
+#define _Buffer_Size 32 // 1..32
 
 extern char Buf_Rx_L[_Buffer_Size];
 extern char buf_receive[11];
@@ -36,6 +38,6 @@ extern ch2int conv;
   }NRF_BOARD;
   
  extern NRF_BOARD Nrf;
- #define Len 0x09
+ //#define Len 0x09
 
 #endif /* VARIABLE_H_ */

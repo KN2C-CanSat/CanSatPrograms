@@ -414,26 +414,26 @@ void NRF24L01_R_Read_RX_Buf(char *Buf, int Size) {
 }
 
 
-void NRF24L01_R_Receive(char Buf[_Buffer_Size]) {
-	NRF24L01_R_CE_HIGH;
-	_delay_us(130);
-
-	while ((NRF24L01_R_Get_Status() & _RX_DR) != _RX_DR);
-
-	NRF24L01_R_CE_LOW;
-
-	NRF24L01_R_Read_RX_Buf(Buf, _Buffer_Size);
-	NRF24L01_R_Clear_Interrupts();
-}
-
-void NRF24L01_R_Send(char Buf[_Buffer_Size]) {
-	NRF24L01_R_Write_TX_Buf(Buf, _Buffer_Size);
-	if((NRF24L01_R_ReadReg(FIFO_STATUS) & TX_EMPTY) == TX_EMPTY )
-		NRF24L01_R_RF_TX();
-	while ((NRF24L01_R_Get_Status() & _TX_DS) != _TX_DS);
-	NRF24L01_R_Clear_Interrupts();
-
-}
+// void NRF24L01_R_Receive(char Buf[_Buffer_Size]) {
+// 	NRF24L01_R_CE_HIGH;
+// 	_delay_us(130);
+// 
+// 	while ((NRF24L01_R_Get_Status() & _RX_DR) != _RX_DR);
+// 
+// 	NRF24L01_R_CE_LOW;
+// 
+// 	NRF24L01_R_Read_RX_Buf(Buf, _Buffer_Size);
+// 	NRF24L01_R_Clear_Interrupts();
+// }
+// 
+// void NRF24L01_R_Send(char Buf[_Buffer_Size]) {
+// 	NRF24L01_R_Write_TX_Buf(Buf, _Buffer_Size);
+// 	if((NRF24L01_R_ReadReg(FIFO_STATUS) & TX_EMPTY) == TX_EMPTY )
+// 		NRF24L01_R_RF_TX();
+// 	while ((NRF24L01_R_Get_Status() & _TX_DS) != _TX_DS);
+// 	NRF24L01_R_Clear_Interrupts();
+// 
+// }
 
 
 char SPI_R(char TX_Data) 

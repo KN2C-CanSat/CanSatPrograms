@@ -17,18 +17,18 @@
 #include "setting.h"
 #include "NRF_transmission.h"
 
-  #define printf2pcs(T)      UART_SEND(sprintf(buffer,T));
-  #define printf2pc(T,...)   UART_SEND(sprintf(buffer,T,__VA_ARGS__));
-  void UART_SEND(int l);
-  char buffer[100];
- 
-  void UART_SEND(int l)
-  {
-  	int i;
-  	for(i=0;i<l;i++)
-  	usart_putchar(&USARTC0,buffer[i]);
- 
-  }
+//   #define printf2pcs(T)      UART_SEND(sprintf(buffer,T));
+//   #define printf2pc(T,...)   UART_SEND(sprintf(buffer,T,__VA_ARGS__));
+//   void UART_SEND(int l);
+//   char buffer[100];
+//  
+//   void UART_SEND(int l)
+//   {
+//   	int i;
+//   	for(i=0;i<l;i++)
+//   	usart_putchar(&USARTC0,buffer[i]);
+//  
+//   }
 
 void NRF_init (void)
 {
@@ -92,45 +92,45 @@ void NRF_receive (void)
 	}	
 }
 
-void NRF_decode (void)
-{
-// 	printf2pc("%c",buf_receive[0]);
-// 	printf2pc("%c",buf_receive[1]);
-// 	printf2pc("%c",buf_receive[2]);
-	//for(uint8_t i=0;i<12;i++)
-	//{	
-		//uint8_t i=0;
-		if ( (uint8_t)buf_receive[0] == 0xFF && (uint8_t)buf_receive[1] == 0xFF  && (uint8_t)buf_receive[2]== Len )
-		{
-			Nrf.Check_Sum=0;
-			for (uint8_t k=4;k<=9;k++)
-			Nrf.Check_Sum=Nrf.Check_Sum + buf_receive[k];
-			
-			if (Nrf.Check_Sum + buf_receive[10]==0)
-			{
-				Nrf.Num=(uint8_t)buf_receive[3];
- 			 
-				conv.byte[0]=buf_receive[4];
- 				conv.byte[1]=buf_receive[5];
- 				Buf_Print[0]=conv.real;
-				printf2pc("num: %d\r",Nrf.Num);
-				printf2pc("257: %d\r",Buf_Print[0]);
-			
-				conv.byte[0]=buf_receive[6];
-				conv.byte[1]=buf_receive[7];
-				Buf_Print[1]=conv.real;
- 				printf2pc("258: %d\r",Buf_Print[1]);
-			
-				conv.byte[0]=buf_receive[8];
-				conv.byte[1]=buf_receive[9];
-				Buf_Print[2]=conv.real;
-				printf2pc("259: %d\r",Buf_Print[2]); 
-			
-			}
-			
-			
-
-		}
-	//}
-	
-}
+//void NRF_decode (void)
+//{
+//// 	printf2pc("%c",buf_receive[0]);
+//// 	printf2pc("%c",buf_receive[1]);
+//// 	printf2pc("%c",buf_receive[2]);
+	////for(uint8_t i=0;i<12;i++)
+	////{	
+		////uint8_t i=0;
+		//if ( (uint8_t)buf_receive[0] == 0xFF && (uint8_t)buf_receive[1] == 0xFF  && (uint8_t)buf_receive[2]== Len )
+		//{
+			//Nrf.Check_Sum=0;
+			//for (uint8_t k=4;k<=9;k++)
+			//Nrf.Check_Sum=Nrf.Check_Sum + buf_receive[k];
+			//
+			//if (Nrf.Check_Sum + buf_receive[10]==0)
+			//{
+				//Nrf.Num=(uint8_t)buf_receive[3];
+ 			 //
+				//conv.byte[0]=buf_receive[4];
+ 				//conv.byte[1]=buf_receive[5];
+ 				//Buf_Print[0]=conv.real;
+				//printf2pc("num: %d\r",Nrf.Num);
+				//printf2pc("SHT_Temp: %d\r",Buf_Print[0]);
+			//
+				//conv.byte[0]=buf_receive[6];
+				//conv.byte[1]=buf_receive[7];
+				//Buf_Print[1]=conv.real;
+ 				//printf2pc("Humi: %d\r",Buf_Print[1]);
+			//
+				//conv.byte[0]=buf_receive[8];
+				//conv.byte[1]=buf_receive[9];
+				//Buf_Print[2]=conv.real;
+				//printf2pc("Pres: %d\r",Buf_Print[2]); 
+			//
+			//}
+			//
+			//
+//
+		//}
+	////}
+	//
+//}

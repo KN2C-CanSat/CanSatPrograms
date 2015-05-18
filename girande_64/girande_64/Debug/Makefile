@@ -63,6 +63,7 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../src/ASF/xmega/drivers/usart/usart.c \
 ../src/initialize.c \
+../src/MPC.c \
 ../src/nrf24l01_L.c \
 ../src/nrf24l01_R.c \
 ../src/NRF_transmission.c \
@@ -85,6 +86,7 @@ ASM_SRCS +=
 OBJS +=  \
 src/ASF/xmega/drivers/usart/usart.o \
 src/initialize.o \
+src/MPC.o \
 src/nrf24l01_L.o \
 src/nrf24l01_R.o \
 src/NRF_transmission.o \
@@ -100,6 +102,7 @@ src/main.o
 OBJS_AS_ARGS +=  \
 src/ASF/xmega/drivers/usart/usart.o \
 src/initialize.o \
+src/MPC.o \
 src/nrf24l01_L.o \
 src/nrf24l01_R.o \
 src/NRF_transmission.o \
@@ -115,6 +118,7 @@ src/main.o
 C_DEPS +=  \
 src/ASF/xmega/drivers/usart/usart.d \
 src/initialize.d \
+src/MPC.d \
 src/nrf24l01_L.d \
 src/nrf24l01_R.d \
 src/NRF_transmission.d \
@@ -130,6 +134,7 @@ src/main.d
 C_DEPS_AS_ARGS +=  \
 src/ASF/xmega/drivers/usart/usart.d \
 src/initialize.d \
+src/MPC.d \
 src/nrf24l01_L.d \
 src/nrf24l01_R.d \
 src/NRF_transmission.d \
@@ -156,6 +161,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

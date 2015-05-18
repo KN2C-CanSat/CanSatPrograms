@@ -6,6 +6,8 @@ src\ASF\xmega\drivers\usart\usart.c
 
 src\initialize.c
 
+src\MPC.c
+
 src\nrf24l01_L.c
 
 src\nrf24l01_R.c

@@ -5,6 +5,8 @@
  */
 #ifndef NRF24L01_R_H_
 #define NRF24L01_R_H_
+#define	_Address_Width	5	// 3..5
+//#define _Buffer_Size 13 // 1..32
 #include "nfr24l01.h"
 #define	_CH_R 125			// Channel 0..125
 /************************************************************************/
@@ -228,7 +230,7 @@ void NRF24L01_R_Write_TX_Buf(char *Buf, int Size);
 void NRF24L01_R_Read_RX_Buf(char *Buf, int Size);
 
 
-void NRF24L01_R_Receive(char Buf[_Buffer_Size]);
-void NRF24L01_R_Send(char Buf[_Buffer_Size]);
+// void NRF24L01_R_Receive(char Buf[_Buffer_Size]);
+// void NRF24L01_R_Send(char Buf[_Buffer_Size]);
 
 #endif /*NRF24L01_R_H_*/
